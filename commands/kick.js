@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 
-exports.run = (bot, message, args) => { let kUser = message.guild.member(message.mentions.members.first() || message.guild.members.get(args[0]));
+exports.run = (bot, message, args) => { 
+    let kUser = message.guild.member(message.mentions.members.first() || message.guild.members.get(args[0]));
     if(!kUser) return message.channel.send(`I couldn't find that user.`);
     let kReason = args.join(" ").slice(22);
     if(!kReason) return message.channel.send("Please provide a reason (e.g: `s!kick @endeavour for being a shitty dad)")
