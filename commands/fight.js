@@ -44,8 +44,8 @@ exports.run = (bot, message, args) => {
     }
    }
    const fight = () => {
-    const hero = getUserChoice();
-    const villain = getComputerChoice();
+    const hero = getHero();
+    const villain = getVillain();
     message.channel.send(`${hero} encounters ${villain}`);
     message.channel.send(`${hero} and ${villain} prepare to fight!`);
     message.channel.send(getWinner());
