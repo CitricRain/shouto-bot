@@ -5,7 +5,7 @@ exports.run = (bot, message, args) => {
     
     **Basic:** *help*, *ping*, *hello*
 
-    **Fun:** *slurp*, *handcrusher*, *selfie*, *punkboy*, *perfectboy*, *rowdyboy*, *garbageboy*
+    **Fun:** *slurp*, *handcrusher*, *selfie*, *punkboy*, *perfectboy*, *rowdyboy*, *garbageboy*, *fight*
 
     **Information:** *botinfo*, *serverinfo*
 
