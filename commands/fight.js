@@ -43,9 +43,10 @@ exports.run = (bot, message, args) => {
         return 'The Villain wins! The hero is defeated.';
     }
    }
-  
-    message.channel.send(`${getHero} encounters ${getVillain}`);
-    message.channel.send(`${getHero} and ${getVillain} prepare to fight!`);
+    const villain = getVillain(``);
+    const hero = getHero(``)
+    message.channel.send(`${hero} encounters ${villain}`);
+    message.channel.send(`${hero} and ${villain} prepare to fight!`);
     message.channel.send(getWinner());
     return;
   };
