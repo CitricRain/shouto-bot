@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = (bot, message, args) => {
     
-    let randomPicture = Math.floor(Math.random() * 21)
+    let randomPicture = Math.floor(Math.random() * 31)
     let person = message.author
     switch (randomPicture) {
       case 0: 
@@ -65,6 +65,40 @@ exports.run = (bot, message, args) => {
       case 19:
         message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto20.png"]}).catch(console.error);
         break;
+      case 20:
+        message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto21.jpg"]}).catch(console.error);
+        break;
+      case 21:
+        message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto22.jpg"]}).catch(console.error);
+        break;
+      case 22:
+        message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto23.jpg"]}).catch(console.error);
+        break;
+      case 23:
+        message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto24.jpg"]}).catch(console.error);
+        break;
+      case 24:
+        message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto25.jpg"]}).catch(console.error);
+        break;
+      case 25:
+        message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto26.jpg"]}).catch(console.error);
+        break;
+      case 26:
+        message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto27.jpg"]}).catch(console.error);
+        break;
+      case 27:
+        message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto28.jpg"]}).catch(console.error);
+        break;
+      case 28:
+        message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto29.jpg"]}).catch(console.error);
+        break;
+      case 29:
+        message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto30.jpg"]}).catch(console.error);
+        break;
+      case 30:
+        message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto31.jpg"]}).catch(console.error);
+        break;
+
 
     }
 }
