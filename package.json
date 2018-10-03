@@ -1,15 +1,29 @@
 {
   "name": "shoutobot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "shoto.js",
+  "version": "2.0.3",
+  "description": "A Shoto Todoroki Bot",
+  "main": "node shoto.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node shoto.js"
   },
-  "author": "",
+  "engines": { "node": "8.4.0" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CitricRain/shouto-bot"
+  },
+  "author": "KP",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CitricRain/shouto-bot"
+  },
+  "homepage": "https://github.com/CitricRain/shouto-bot#readme",
   "dependencies": {
-    "discord.js": "^11.4.2",
-    "express": "^4.16.3"
+    "discord.js": "^11.2.1",
+    "enmap": "^0.3.2",
+    "moment": "^2.18.1",
+    "moment-duration-format": "^1.3.0",
+    "express": "^4.15.5"
   }
 }
+
