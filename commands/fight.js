@@ -4,11 +4,8 @@ const Discord = require('discord.js');
 exports.run = (bot, message, args) => { 
     const getHero = (userHero) => {
         userHero = args.join(" ").slice(22);
-        if (userHero === 'bakugo' || userHero === 'midoriya' || userHero === 'todoroki') {
-          return userHero;
-        } else {
-          console.log('Error!')
-        }
+        if(!userHero) return message.channel.send(`Please pick your hero`)
+        if(userHero('bakugo' || 'todoroki' || 'midoriya')) return message.channel.send('That hero is not valid. Perhaps you spelled something wrong or the character you selected has not been added yet')
       };    
   function getVillain() {
     let vRandomNumber =
