@@ -43,10 +43,11 @@ exports.run = (bot, message, args) => {
         return 'The Villain wins! The hero is defeated.';
     }
    }
-  return
+  
     message.channel.send(`${getHero} encounters ${getVillain}`);
     message.channel.send(`${getHero} and ${getVillain} prepare to fight!`);
     message.channel.send(getWinner());
+    return;
   };
 
 module.exports.help = {
