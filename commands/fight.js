@@ -3,31 +3,41 @@ const Discord = require('discord.js');
 
 exports.run = (bot, message, args) => { 
 
-    function getHero(userHero) {
-        userHero = args.join(" ").slice(22);
-        if(!userHero) return message.channel.send(`Please pick your hero`)
-        if(userHero('bakugo' || 'todoroki' || 'midoriya')) return message.channel.send('That hero is not valid. Perhaps you spelled something wrong or the character you selected has not been added yet')
+    function getHero() {
+        let hRandomNumber =
+        Math.floor(Math.random() * 3)
+        switch (hRandomNumber) {
+          case 0:
+            return ('Shoto Todoroki', {files: ["./images/todoroki.png"]}).catch(console.error);
+          case 1:
+            return ('Katsuki Bakugo', {files: ["./images/bakugo.png"]}).catch(console.error);
+          case 2:
+            return ('Izuku Midoriya', {files: ["./images/midoriya.png"]}).catch(console.error);
+        }
     }
+
   function getVillain() {
     let vRandomNumber =
-    Math.floor(Math.random() * 8)
+    Math.floor(Math.random() * 9)
     switch (vRandomNumber) {
       case 0:
-        return 'Overhaul';
+        return ('Overhaul', {files: ["./images/overhaul.jpg"]}).catch(console.error);
       case 1:
-        return 'Shigaraki Tomura';
+        return ('Tomura Shigaraki', {files: ["./images/shigaraki.png"]}).catch(console.error);
       case 2:
-        return 'Toga Himiko'
+        return ('Toga Himiko', {files: ["./images/toga.jpg"]}).catch(console.error);
       case 3:
-        return 'Dabi'
+        return ('Dabi', {files: ["./images/dabi.jpg"]}).catch(console.error);
       case 4:
-        return 'Magne'
+        return ('Magne', {files: ["./images/magne.png"]}).catch(console.error);
       case 5:
-        return 'Muscular'
+        return ('Muscular', {files: ["./images/muscular.png"]}).catch(console.error);
       case 6:
-        return 'Moonfish'
+        return ('Moonfish', {files: ["./images/moonfish.jpg"]}).catch(console.error);
       case 7:
-        return 'Mr Compress';
+        return ('Mr Compress', {files: ["./images/mrcompress.jpg"]}).catch(console.error);
+      case 8:
+      return ('Stain', {files: ["./images/stain.jpg"]}).catch(console.error);
     }
 }
    getWinner
