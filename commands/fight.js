@@ -50,7 +50,7 @@ exports.run = (bot, message, args) => {
     message.channel.send(`${hero} and ${villain} prepare to fight!`);
     message.channel.send(getWinner());
    }
-   message.channel.send(fight);
+   return message.channel.send(fight);
   };
 
 module.exports.help = {
