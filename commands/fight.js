@@ -35,7 +35,7 @@ exports.run = (bot, message, args) => {
    getWinner
    function getWinner() {
     let vRandomNumber =
-    Math.floor(Math.random() * 8)
+    Math.floor(Math.random() * 2)
     switch (vRandomNumber) {
       case 0:
         return `The Hero wins! The villain is sent to Tartarus!`;
@@ -43,14 +43,10 @@ exports.run = (bot, message, args) => {
         return 'The Villain wins! The hero is defeated.';
     }
    }
-   const fight = () => {
-    const hero = getHero();
-    const villain = getVillain();
-    message.channel.send(`${hero} encounters ${villain}`);
-    message.channel.send(`${hero} and ${villain} prepare to fight!`);
+  return
+    message.channel.send(`${getHero} encounters ${getVillain}`);
+    message.channel.send(`${getHero} and ${getVillain} prepare to fight!`);
     message.channel.send(getWinner());
-   }
-   return message.channel.send(fight);
   };
 
 module.exports.help = {
