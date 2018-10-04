@@ -36,10 +36,16 @@ bot.on('ready', () => {
   });
 
 bot.on("guildMemberAdd", async member => {
-  console.log(`${member.id} joined the server`);
+  console.log(`${member.id} has joined the server`);
 
   let welcomeChannel = member.guild.channels.find(`name`, "welcome");
+  if(!welcomeChannel) return;
+
   welcomeChannel.send(`${member} has joined the server.`)
+  member.send(`Hello, I am Shoto bot. I am currently a work in progress bot. If you encounter any bugs or problems, please message my creator to report them.
+  Please note that since I am still a work in progress, I will be updated frequently, so be on the lookout for new features and commands.
+  Other than that, please use the command **'s!help'** to take a look at what I can do.`)
+  
 });
 
 // Message event
