@@ -1,25 +1,26 @@
 const Discord = require('discord.js');
 
 exports.run = (bot, message, args) => { 
-    message.channel.send(`Hello, I am Shoto Bot. I'm currently only a work in progress bot, so please contact my creator if you find any bugs or problems, thanks.
-    
-    **Basic:** *help*, *ping*, *hello*
+  const Discord = require('discord.js');
 
-    **Fun:** *slurp*, *handcrusher*, *selfie*, *punkboy*, *perfectboy*, *rowdyboy*, *garbageboy*, *fight*
-
-    **Information:** *botinfo*, *serverinfo*
-
-    **Mod Only:** *kick*, *ban*
-
-    **Extra:** *Use the name of any character and I'll send you a full character sheet 
-
-    *Use the report command to report a user to an admin*)
-
-   *Please remember to use the prefix 's!' before any command, or I wont respond*
+  exports.run = (bot, message, args) => { 
   
-    ***More commands to be added soon***
-    `)
-
+      let hIcon = message.guild.iconURL;
+      let helpEmbed = new Discord.RichEmbed()
+      .setDescription("Help")
+      .setColor("#70c168")
+      .setThumbnail(hIcon)
+      .addField("Basic", "`help`, `ping`, `hello`")
+      .addField("Fun", "slurp, handcrusher, selfie, punkboy, perfectboy, rowdyboy, garbageboy, fight") 
+      .addField("Information", "`botinfo`, `serverinfo`")
+      .addField("Mod Only", "`kick`, `ban`")
+      .addField("Extra", `Use to name of any character for a full character sheet (Currently only works for class 1-A)
+      Use the report command to report a user to an admin
+      Please remember to use the prefix 's!' before any command, or I wont respond`)
+      .addField("*More Commands Coming Soon.*", "");
+  
+        return message.channel.send(helpEmbed);
+   }
   }
   module.exports.help = {
     name: "help"

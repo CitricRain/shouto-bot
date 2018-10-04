@@ -4,7 +4,7 @@ exports.run = (bot, message, args) => {
     let bUser = message.guild.member(message.mentions.members.first() || message.guild.members.get(args[0]));
     if(!bUser) return message.channel.send(`I couldn't find that user.`);
     let bReason = args.join(" ").slice(22);
-    if(!bReason) return message.channel.send("Please provide a reason (e.g: `s!ban @endeavour for being a shitty dad)")
+    if(!bReason) return message.channel.send("Please provide a reason (e.g: `s!ban @endeavour for being a shitty dad`)")
     if(!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send("I'm afriad I can't do that.");
     if(bUser.hasPermission("BAN_MEMBERS")) return message.channel.send("I'm afraid I can't do that.")
   
