@@ -5,14 +5,59 @@ exports.run = (bot, message, args) => {
 
     function getHero() {
         let hRandomNumber =
-        Math.floor(Math.random() * 3)
+        Math.floor(Math.random() * 26)
         switch (hRandomNumber) {
           case 0:
             return 'Shoto Todoroki';
           case 1:
             return 'Katsuki Bakugo';
-          case 2:
+          case 3:
             return 'Izuku Midoriya'
+          case 4:
+            return 'Yuga Aoyama'
+          case 5:
+            return 'Mina Ashido'
+          case 6:
+            return 'Tsuyu Asuu'
+          case 7:
+            return 'Toru Hagakure'
+          case 8:
+            return 'Tenya Iida'
+          case 9:
+            return 'Kyoka Jiro'
+          case 10:
+            return 'Deki Kaminari'
+          case 11:
+            return 'Eijiro Kirishima'
+          case 12:
+            return 'Koji Koda'
+          case 13:
+            return 'Mashirao Ojiro'
+          case 14:
+            return 'Rikido Sato'
+          case 15:
+            return 'Hanta Sero'
+          case 16:
+            return 'Mezo Shoji'
+          case 17:
+            return 'Fumikage Tokoyami'
+          case 18:
+            return 'Ochaco Uraraka'
+          case 19:
+            return 'Momo Yaoyorozu'
+          case 20:
+            return 'All Might'
+          case 21:
+            return 'Endeavour'
+          case 22:
+            return 'Eraser Head'
+          case 23:
+            return 'Present Mic'
+          case 24:
+            return 'Hawks'
+          case 25:
+            return 'Best Jeanist'
+
         }
     }
 
