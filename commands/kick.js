@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 
 exports.run = (bot, message, args) => { 
+    if(message.channel.type === "dm") return message.channel.send("But... There's no one else here.");
     let kUser = message.guild.member(message.mentions.members.first() || message.guild.members.get(args[0]));
     if(!kUser) return message.channel.send(`I couldn't find that user.`);
     let kReason = args.join(" ").slice(22);
