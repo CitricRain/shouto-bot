@@ -43,8 +43,8 @@ bot.on("guildMemberAdd", async member => {
 
   welcomeChannel.send(`${member} has joined the server.`)
   member.send(`Hello, I am Shoto bot. I am currently a work in progress bot. If you encounter any bugs or problems, please message my creator to report them.
-  Please note that since I am still a work in progress, I will be updated frequently, so be on the lookout for new features and commands.
-  Other than that, please use the command **'s!help'** to take a look at what I can do.`)
+Please note that since I am still a work in progress, I will be updated frequently, so be on the lookout for new features and commands.
+Other than that, please use the command **'s!help'** to take a look at what I can do.`)
   
 });
 
