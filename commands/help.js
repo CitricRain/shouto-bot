@@ -13,15 +13,12 @@ exports.run = (bot, message, args) => {
       .addField("Basic", "`help`, `ping`, `hello`")
       .addField("Fun", "slurp, handcrusher, selfie, punkboy, perfectboy, rowdyboy, garbageboy, fight") 
       .addField("Information", "`botinfo`, `serverinfo`")
-      .addField("Mod Only", "`kick`, `ban`")
-      .addField("Extra", `Use to name of any character for a full character sheet (Currently only works for class 1-A)
-      Use the report command to report a user to an admin
-      Please remember to use the prefix 's!' before any command, or I wont respond`)
-      .addField("*More Commands Coming Soon.*", "");
+      .addField("Mod Stuff", "`kick`, `ban`, `report`")
+      .addField("Character Sheets", "`Use to name of any character for a full character sheet (Currently only works for class 1-A`");
   
         return message.channel.send(helpEmbed);
    }
-  }
+}
   module.exports.help = {
     name: "help"
   }
