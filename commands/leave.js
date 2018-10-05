@@ -5,9 +5,9 @@ exports.run = (bot, message, args) => {
 
         if(!message.guild.voiceConnection){
 
-            message.member.voiceChannel.join()
-               message.chennel.send("I'm here.");
-                 
+            message.member.voiceChannel.leave() 
+             message.chennel.send("As you wish.");
+        
         }
     }
     else {
@@ -15,5 +15,5 @@ exports.run = (bot, message, args) => {
     }
 };
 module.exports.help = {
-    name: "join"
+    name: "leave"
 }
