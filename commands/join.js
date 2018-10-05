@@ -6,9 +6,8 @@ exports.run = (bot, message, args) => {
         if(message.guild.voiceConnection){
 
             message.member.voiceChannel.join()
-                 .then(connection => {
                      message.channel.send("I'm here");
-                 })
+                
         }
     }
     else {

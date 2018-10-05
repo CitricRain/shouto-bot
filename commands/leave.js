@@ -6,11 +6,9 @@ exports.run = (bot, message, args) => {
         if(!message.guild.voiceConnection){
 
             message.member.voiceChannel.leave()
-            .then(connection => {
                 message.channel.send("If you say so.");
-            })
+            }
         
-        }
     }
     else {
         message.channel.send("Try joining a voice channel fist.");
