@@ -5,8 +5,10 @@ exports.run = (bot, message, args) => {
 
         if(!message.guild.voiceConnection){
 
-            message.member.voiceChannel.leave() 
-             message.chennel.send("As you wish.");
+            message.member.voiceChannel.join()
+            .then(connection => {
+                message.channel.send("I'm here.");
+            })
         
         }
     }

@@ -3,11 +3,12 @@ const Discord = require('discord.js');
 exports.run = (bot, message, args) => {
     if(message.member.voiceChannel) {
 
-        if(!message.guild.voiceConnection){
+        if(message.guild.voiceConnection){
 
             message.member.voiceChannel.join()
-               message.chennel.send("I'm here.");
-                 
+                 .then(connection => {
+                     message.channel.send("I'm here.");
+                 })
         }
     }
     else {
