@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node shoto.js"
   },
-  "engines": { "node": "8.4.0" },
+  "engines": {
+    "node": "8.4.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CitricRain/shouto-bot"
@@ -21,9 +23,10 @@
   "dependencies": {
     "discord.js": "^11.2.1",
     "enmap": "^0.3.2",
+    "express": "^4.15.5",
+    "ffmpeg-binaries": "^4.0.0",
     "moment": "^2.18.1",
     "moment-duration-format": "^1.3.0",
-    "express": "^4.15.5"
+    "opusscript": "0.0.6"
   }
 }
-
