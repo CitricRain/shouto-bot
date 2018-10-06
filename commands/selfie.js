@@ -98,6 +98,9 @@ exports.run = (bot, message, args) => {
       case 30:
         message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto31.jpg"]}).catch(console.error);
         break;
+      case 30:
+        message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto32.jpg"]}).catch(console.error);
+        break;
 
 
     }
