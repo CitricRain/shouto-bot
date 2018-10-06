@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = (bot, message, args) => {
 
-    let randomPicture = Math.floor(Math.random() * 31)
+    let randomBoy = Math.floor(Math.random() * 31)
     let person = message.author
     switch (randomBoy) {
       case 0: 
