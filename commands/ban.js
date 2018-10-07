@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = (bot, message, args) => { 
     if(message.channel.type === "dm") return message.channel.send("But... There's no one else here.");
+    if(!bot.hasPermission("BAN_MEMBERS")) return message.channel.send("I have not recieved my Provisional Banning License yet. I'll receieve it once I'm given the permission `Ban Members`");
     let bUser = message.guild.member(message.mentions.members.first() || message.guild.members.get(args[0]));
     if(!bUser) return message.channel.send(`I couldn't find that user.`);
     let bReason = args.join(" ").slice(22);
