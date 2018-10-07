@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = (bot, message, args) => { 
     if(message.channel.type === "dm") return message.channel.send("But... There's no one else here.");
-    if(!bot.hasPermission("KICK_MEMBERS")) return message.channel.send("I have not recieved my Provisional Kicking License yet. I'll receieve it once I'm given the permission `Kick Members`");
+    if(!guild.me.hasPermission("KICK_MEMBERS")) return message.channel.send("I have not recieved my Provisional Kicking License yet. I'll receieve it once I'm given the permission `Kick Members`");
     let kUser = message.guild.member(message.mentions.members.first() || message.guild.members.get(args[0]));
     if(!kUser) return message.channel.send(`I couldn't find that user.`);
     let kReason = args.join(" ").slice(22);
