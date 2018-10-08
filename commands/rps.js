@@ -2,10 +2,9 @@ const Discord = require('discord.js');
 
     const userInput = args.slice(0).join(" ");
     if (!userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') {
-      return userInput;
     } else {
       console.log('Play by the rules.')
-    }
+    
   };
   
   function getComputerChoice() {
