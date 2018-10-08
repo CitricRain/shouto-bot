@@ -14,8 +14,6 @@ const fs = require('fs');
 const Discord = require('discord.js');
 const config = require("./config.json");
 const bot = new Discord.Client();
-let cooldown = new Set();
-let cdSeconds = 5;
 
 
 fs.readdir("./commands/", (err, files) => {
