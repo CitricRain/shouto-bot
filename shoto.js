@@ -41,7 +41,7 @@ bot.on("guildMemberAdd", function(member) {
   if(!welcomeChannel) return;
 
   let greetings = [`${member} has joined us.`, `A new hero joins the ranks! ${member} has joined.`, `Its okay now, why? Because ${member} is here!`];
-  let welcome = Math.floor((Math.random() * replies.length));
+  let welcome = Math.floor((Math.random() * greetings.length));
   welcomeChannel.send(greetings[welcome])
 
   member.send(`Hello, ${member}, I am Shoto bot. I am currently a work in progress bot. If you encounter any bugs or problems, please message my creator to report them.
