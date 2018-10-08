@@ -5,7 +5,7 @@ exports.run = (bot, message, args) => {
   let replies = ["Yes", "No", "I don't know", "Of course", "I'd rather not say", "Definately not", "Definately", "Ask another time", "Of course not.", "Possibly"];
 
   let result = Math.floor((Math.random() * replies.length));
-  let question = args.slice(1).join(" ");
+  let question = args.slice(0).join(" ");
   if(!question) return message.channel.send("Please ask a question.");
   
   let sBallEmbed = new Discord.RichEmbed()
