@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 
 exports.run = (bot, message, args) => { 
-    const getUserChoice = (userInput) => {
         userInput = userInput.toLowerCase();
         if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') {
           return userInput;
