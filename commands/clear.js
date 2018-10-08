@@ -10,7 +10,7 @@ exports.run = (bot, message, args) => {
     .addField("Can Be Used By", "People with the permission `MANAGE MESSAGES`")
     .addField("Usage", "`s!clear <no. of messages to clear>`")
 
-    if(args[0 === help]) return message.channel.send(clearEmbed);
+    if(args[0 === `help`]) return message.channel.send(clearEmbed);
     if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("No.");
     if(!args[0]) return message.channel.send("I can't delete nothing.");
     message.channel.bulkDelete(args[0]).then(() => {
