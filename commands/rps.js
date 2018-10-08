@@ -6,59 +6,67 @@ exports.run = (bot, message, args) => {
         if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') {
           return userInput;
         } else {
-          console.log('Error!')
+          message.channel.send('Play by the rules.')
         }
       };
       
-      function getComputerChoice() {
+      function getShotoChoice() {
         let randomNumber =
-        Math.floor(Math.random() * 3)
+        Math.floor(Math.random() * 4)
         switch (randomNumber) {
-          case 0:
-            return 'rock';
           case 1:
-            return 'paper';
+            return 'rock';
           case 2:
+            return 'paper';
+          case 3:
             return 'scissors';
         }
       };
       
-      const determineWinner = (userChoice, computerChoice) => {
+      const determineWinner = (userChoice, shotoChoice) => {
         if (userChoice === computerChoice) {
-          return 'It`s a tie!';
+          return 'It`s a tie.';
         }
         if (userChoice === 'rock') {
           if(computerChoice === 'paper') {
-            return 'You won!'
+            return 'I won.';
+          } else {
+            return 'You won.'
           }
         }
         if (userChoice === 'paper') {
           if (computerChoice === 'scissors') {
-            return 'The computer won!';
+            return 'I won.';
           } else {
-            return 'You won!'
+            return 'You won.'
           }
         }
         if (userChoice === 'scissors') {
           if (computerChoice === 'rock') {
-            return 'The computer won!';
+            return 'I won.';
           } else {
-            return 'You won!'
+            return 'You won.'
           }
         }
+        if (userChoice === 'scissors') {
+          if (computerChoice === 'rock') {
+            return 'I won.';
+          } else {
+            return 'You won.'
+          }
       }
-      
-      const playGame = () => {
-        const userChoice = getUserChoice('scissors');
-        const computerChoice =
-              getComputerChoice();
-        console.log(`You chose ${userChoice}`);
-        console.log(`The computer chose ${computerChoice}`);
-        console.log(determineWinner(userChoice, computerChoice));
-      };
+    }
+    
+        const userChoice = args.join(" ");
+        const shotoChoice =
+              getshotoChoice();
+        message.channel.send(`You chose ${userChoice}`);
+        message.channel.send(`I chose ${shotoChoice}`);
+        message.channel.send(determineWinner(userChoice, computerChoice));
     
     
-}
+    
+};
 module.exports.help = {
     name: "rps"
 }
