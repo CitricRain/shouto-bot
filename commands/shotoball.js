@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = (bot, message, args) => {
 
-  if(!args[2]) return message.channel.send(`Ask a full question.`);
+  if(!args[3]) return message.channel.send(`Ask a full question.`);
   let replies = ["Yes", "No", "I don't know", "Of course", "I'd rather not say", "Definately not", "Definately", "Ask another time", "Of course not.", "Possibly"];
 
   let result = Math.floor((Math.random() * replies.length));
