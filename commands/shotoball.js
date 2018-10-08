@@ -10,7 +10,7 @@ exports.run = (bot, message, args) => {
   
   let sBallEmbed = new Discord.RichEmbed()
   .setAuthor(message.author.tag)
-  .setImage("https://cdn.discordapp.com/attachments/457156771727933462/498897273254707201/thonk.png")
+  .setThumbnail("https://cdn.discordapp.com/attachments/498229156815962133/498899034698809355/thonk.png")
   .setColor("#4286f4")
   .addField("Question", question)
   .addField("Answer", replies[result]);
