@@ -51,9 +51,10 @@ Other than that, please use the command **'s!help'** to take a look at what I ca
 
 bot.on('message' , (message) => {
 
+if(message.channel.type === "dm") console.log(`[${message.author.username}] ${message.content}`);
  if(message.author.bot) return;
  if (!message.content.startsWith(config.prefix)) return;
- if(message.channel.type === "dm") console.log(`[${message.author.username}] ${message.content}`);
+
 
  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
  const command = args.shift().toLowerCase();
