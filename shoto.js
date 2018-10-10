@@ -40,7 +40,7 @@ bot.on("guildMemberAdd", function(member) {
   let welcomeChannel = member.guild.channels.find(`name`, "welcome");
   if(!welcomeChannel) return;
 
-  let greetings = [`${member} has joined us.`, `A new hero joins the ranks! ${member} has joined.`, `Its okay now, why? Because ${member} is here!`];
+  let greetings = [`Now its your turn,${member}.... To join the server`, `A new hero joins the ranks! ${member} has joined.`, `Its okay now, why? Because ${member} is here!`];
   let welcome = Math.floor((Math.random() * greetings.length));
   welcomeChannel.send(greetings[welcome])
 
