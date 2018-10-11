@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = (bot, message, args) => {
 
-    let randomBoy = Math.floor(Math.random() * 4)
+    let randomBoy = Math.floor(Math.random() * 5)
     switch (randomBoy) {
       case 0: 
         message.channel.send(`A soft boy`, {files: ["./images/softboy.jpg"]}).catch(console.error);
@@ -15,6 +15,12 @@ exports.run = (bot, message, args) => {
         break;
       case 3:
         message.channel.send(`A soft boy`, {files: ["./images/softboy4.jpg"]}).catch(console.error);
+        break;  
+      case 4:
+        message.channel.send(`A soft boy`, {files: ["./images/softboy5.jpg"]}).catch(console.error);
+        break;  
+      case 4:
+        message.channel.send(`A soft boy`, {files: ["./images/softboy6.jpg"]}).catch(console.error);
         break;  
     }
 }
