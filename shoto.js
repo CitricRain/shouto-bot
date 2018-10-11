@@ -35,7 +35,11 @@ bot.on('ready', () => {
   });
 
 bot.on("guildMemberAdd", function(member) {
-  console.log(`${member.id} has joined the server`);
+  console.log(`${member.user.username} has joined the server`);
+
+  let todoRole = member.guild.roles.find(`name`, "Todohoe");
+  if(!role) return;
+  member.addRole(todoRole);
 
   let welcomeChannel = member.guild.channels.find(`name`, "welcome");
   if(!welcomeChannel) return;
