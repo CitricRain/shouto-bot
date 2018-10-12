@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = (bot, message, args) => {
     
-    let randomPicture = Math.floor(Math.random() * 31)
+    let randomPicture = Math.floor(Math.random() * 36)
     let person = message.author
     switch (randomPicture) {
       case 0: 
@@ -98,9 +98,23 @@ exports.run = (bot, message, args) => {
       case 30:
         message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto31.jpg"]}).catch(console.error);
         break;
-      case 30:
+      case 31:
         message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto32.jpg"]}).catch(console.error);
         break;
+      case 32:
+        message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto33.png"]}).catch(console.error);
+        break;
+      case 33:
+        message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto34.jpg"]}).catch(console.error);
+        break;
+      case 34:
+        message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto35.jpg"]}).catch(console.error);
+        break;
+      case 35:
+        message.channel.send(`If you insist, ${person}.`, {files: ["./images/shoto36.jpg"]}).catch(console.error);
+        break;
+
+
 
 
     }
