@@ -5,7 +5,7 @@ exports.run = (bot, message, args) => {
 
     function getHero() {
         let hRandomNumber =
-        Math.floor(Math.random() * 26)
+        Math.floor(Math.random() * 25)
         switch (hRandomNumber) {
           case 0:
             return 'Shoto Todoroki';
