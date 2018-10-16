@@ -12,10 +12,12 @@ exports.run = async (bot, message, args) => {
         return message.channel.send("Please ask a proper question.");
     }
     const calcEmbed = new Discord.RichEmbed()
-    .setColour("#ffffff")
+    .setColor("#ffffff")
     .setTitle("Calculation")
     .addField("Question", `\`\`\`${args.join(' ')}\`\`\``)
-    .addField("Answer", `\`\`\`js${resp}\`\`\``)
+    .addField("Answer", `\`\`\`js${resp}\`\`\``);
+
+    message.channel.send(calcEmbed);
 }
 module.exports.help = {
     name: "calc"
