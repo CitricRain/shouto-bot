@@ -15,8 +15,7 @@ exports.run = async (bot, message, args) => {
     .setColor("#ffffff")
     .setTitle("Calculation")
     .addField("Question", `\`\`\`${args.join(' ')}\`\`\``)
-    .addField("Answer", `\`\`\`js
-    ${resp}\`\`\``);
+    .addField("Answer", `\`\`\`${resp}\`\`\``);
 
     message.channel.send(calcEmbed);
 }
