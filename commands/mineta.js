@@ -19,7 +19,9 @@ exports.run = (bot, message, args) => {
     .addField("Likes", `Girls`);
 
 
-      return message.channel.send(serverEmbed);
+      message.channel.send(serverEmbed)
+      message.channel.send("ew...").then(msg => msg.delete(5000))
+      return;
   }
   module.exports.help = {
     name: "mineta"
