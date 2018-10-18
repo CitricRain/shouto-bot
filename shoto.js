@@ -28,11 +28,15 @@ fs.readdir("./commands/", (err, files) => {
  
 
 // Ready event
-
+let statuses = ["with cold soba. | use s!help", "with cold soba. | use s!help", "with cold soba. | use s!help", "with cold soba. | use s!help", "with cold soba. | use s!help", "with cold soba. | use s!help", "with cold soba. | use s!help", "Dabi is a Todoroki", "with cold soba. | use s!help", "with cold soba. | use s!help"]
 bot.on('ready', () => {
     console.log(`${bot.user.username} is ready to help ${bot.users.size} users, in ${bot.channels.size} channels in ${bot.guilds.size} server(s).`);
-    bot.user.setActivity('with cold soba. | use s!help')
+    setInterval(function() {
+      let status = statuses[Math.floor(Math.random()*statuses.length)];
+      bot.user.setPresence({ activity: { name: status }, status: "online"});
+    }, 5000)
   });
+
 
 bot.on("guildMemberAdd", function(member) {
   console.log(`${member.user.username} has joined the server`);
