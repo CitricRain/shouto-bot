@@ -28,7 +28,7 @@ fs.readdir("./commands/", (err, files) => {
  
 
 // Ready event
-let statuses = ["with cold soba. | use s!help", "with cold soba. | use s!help", "with cold soba. | use s!help", "with cold soba. | use s!help", "with cold soba. | use s!help", "with cold soba. | use s!help", "with cold soba. | use s!help", "Dabi is a Todoroki", "with cold soba. | use s!help", "with cold soba. | use s!help"]
+let statuses = ["with cold soba. | use s!help", "with cold soba. | use s!help", "with cold soba. | use s!help", "Dabi is a Todoroki",]
 bot.on('ready', () => {
     console.log(`${bot.user.username} is ready to help ${bot.users.size} users, in ${bot.channels.size} channels in ${bot.guilds.size} server(s).`);
     console.log(bot.user.guilds.map(v=>v.name).join('\n'));
