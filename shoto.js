@@ -31,7 +31,7 @@ fs.readdir("./commands/", (err, files) => {
 let statuses = ["with cold soba. | use s!help", "with cold soba. | use s!help", "with cold soba. | use s!help", "with cold soba. | use s!help", "with cold soba. | use s!help", "with cold soba. | use s!help", "with cold soba. | use s!help", "Dabi is a Todoroki", "with cold soba. | use s!help", "with cold soba. | use s!help"]
 bot.on('ready', () => {
     console.log(`${bot.user.username} is ready to help ${bot.users.size} users, in ${bot.channels.size} channels in ${bot.guilds.size} server(s).`);
-    console.log(client.user.guilds.map(v=>v.name).join('\n'));
+    console.log(bot.user.guilds.map(v=>v.name).join('\n'));
     setInterval(function() {
       let status = statuses[Math.floor(Math.random()*statuses.length)];
       bot.user.setPresence({ activity: { name: status }, status: "online"});
