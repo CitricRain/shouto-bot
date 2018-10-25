@@ -4,7 +4,7 @@ exports.run = (bot, message, args) => {
    
     let fireEmbed = new Discord.RichEmbed()
     .setTitle("Results")
-    .setDescription(`:fire: | **${message.author.tag}** flipped **Fire!** (Thats hot!)`)
+    .setDescription(`:fire: | **${message.author.username}** flipped **Fire!** (Thats hot!)`)
     .setColor("#ff5416");
 
     let iceEmbed = new Discord.RichEmbed()
