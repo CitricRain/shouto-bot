@@ -9,7 +9,7 @@ exports.run = (bot, message, args) => {
 
     let iceEmbed = new Discord.RichEmbed()
     .setTitle("Results")
-    .setDescription(`:snowflake: | **${message.author.tag}** flipped **Ice!** (Pretty cool!)`)
+    .setDescription(`:snowflake: | **${message.author.username}** flipped **Ice!** (Pretty cool!)`)
     .setColor("#ccfdff");
 
     let flip = Math.floor(Math.random() * 2)
