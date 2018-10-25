@@ -1,8 +1,4 @@
-const Discord = require('discord.js');
-
-exports.run = (bot, message, args) => { 
-  const Discord = require('discord.js');
-
+ const Discord = require('discord.js');
   exports.run = (bot, message, args) => { 
   
       let helpEmbed = new Discord.RichEmbed()
@@ -15,8 +11,8 @@ exports.run = (bot, message, args) => {
       .addField("Character Sheets", "`Use the name of any character for a full character sheet (Currently only works for class 1-A`");
   
         return message.channel.send(helpEmbed);
-   }
-}
+   } 
+
   module.exports.help = {
     name: "help"
   }
