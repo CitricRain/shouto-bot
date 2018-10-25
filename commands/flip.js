@@ -14,10 +14,10 @@ exports.run = (bot, message, args) => {
 
     let flip = Math.floor(Math.random() * 2)
     switch (flip) {
-      case 1: 
+      case 0: 
         message.channel.send(fireEmbed);
         break;
-      case 2:
+      case 1:
         message.channel.send(iceEmbed);
         break;
 
