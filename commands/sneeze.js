@@ -1,13 +1,9 @@
 const Discord = require('discord.js');
 
 exports.run = (bot, message, args) => {
-    message.channel.send(`A rowdy boy`, {files: ["./images/rowdyboy.jpg"]}).catch(console.error);
-    const Discord = require('discord.js');
 
-exports.run = (bot, message, args) => {
-
-    let randomRBoy = Math.floor(Math.random() * 5)
-    switch (randomRBoy) {
+    let randomSneeze = Math.floor(Math.random() * 5)
+    switch (randomSneeze) {
       case 1: 
         message.channel.send(`Achoo!`, {files: ["./images/sneeze.png"]}).catch(console.error);
         break;
@@ -24,5 +20,5 @@ exports.run = (bot, message, args) => {
 }
 }
 module.exports.help = {
-    name: "rowdyboy"
+    name: "sneeze"
 }
