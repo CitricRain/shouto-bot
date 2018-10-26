@@ -18,7 +18,6 @@ exports.run = (bot, message, args) => {
         break;  
     }
 }
-}
 module.exports.help = {
     name: "sneeze"
 }
