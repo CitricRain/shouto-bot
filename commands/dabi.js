@@ -23,7 +23,7 @@ exports.run = (bot, message, args) => {
     .setColor("#ff0000")
     .addField("Japanese Name", `轟 燈矢`)
     .addField("I͙̤̦̜ṉ̷̘fo͉͔̳̪̘̹̕r̮͍̺͉m̛a̛̲̮̠͓̪̼͍t҉̱i̶͖̣͇̲o̵̞̙̞̲̝̗n͎̠͜", `The final Todoroki sibling/`)
-    .addFooter("Credit: Keiid");
+    .setFooter("Credit: Keiid");
 
     let flip = Math.floor(Math.random() * 14)
     switch (flip) {
