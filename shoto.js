@@ -80,4 +80,4 @@ if(message.channel.type === "dm") console.log(`[${message.author.username}] ${me
 });
 
 
-bot.login(process.env.TOKEN)
+bot.login()
