@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = (bot, message, args) => { 
      
+    let user = message.guild.member
     let iIcon = user.user.displayAvatarURL;
     let iEmbed = new Discord.RichEmbed()
     .setDescription("User Information")
