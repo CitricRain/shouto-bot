@@ -2,17 +2,17 @@ const Discord = require('discord.js');
 
 exports.run = (bot, message, args) => { 
 
-    let iIcon = message.member.displayAvatarURL;
+    let iIcon = message.guild.member.displayAvatarURL;
     let iEmbed = new Discord.RichEmbed()
     .setDescription("User Information")
     .setColor("#6dff77")
-    .setTitle(`${message.member.tag} Info`)
-    .addField("Discord Name", message.member.username)
-    .addField("Discord Tag", `#${message.member.descriminator}`)
-    .addField("Joined On", message.member.createdAt)
-    .addField("Current Status", message.member.presence.status)
-    .addField("User Activity", `${message.member.presence.game ? message.member.presence.game.name: 'Not playing anything'}`)
-    .setFooter(`User ID: ${message.member.id}`)
+    .setTitle(`${message.guild.member.tag} Info`)
+    .addField("Discord Name", message.guildmember.username)
+    .addField("Discord Tag", `#${message.guild.member.descriminator}`)
+    .addField("Joined On", message.guild.member.createdAt)
+    .addField("Current Status", message.guild.member.presence.status)
+    .addField("User Activity", `${message.guild/member.presence.game ? message.member.presence.game.name: 'Not playing anything'}`)
+    .setFooter(`User ID: ${message.guild.member.id}`)
     .setThumbnail(iIcon);
 
     return message.channel.send(iEmbed);
