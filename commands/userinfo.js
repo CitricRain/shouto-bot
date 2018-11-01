@@ -7,7 +7,7 @@ exports.run = (bot, message, args) => {
     .setDescription("User Information")
     .setColor("#6dff77")
     .setTitle(`${message.guild.member.tag} Info`)
-    .addField("Discord Name", message.guildmember.username)
+    .addField("Discord Name", message.guild.member.username)
     .addField("Discord Tag", `#${message.guild.member.descriminator}`)
     .addField("Joined On", message.guild.member.createdAt)
     .addField("Current Status", message.guild.member.presence.status)
