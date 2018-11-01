@@ -2,11 +2,11 @@ const Discord = require('discord.js');
 
 exports.run = (bot, message, args) => { 
 
-    let iIcon = message.member.user.displayAvatarURL;
+    let iIcon = message.member.displayAvatarURL;
     let iEmbed = new Discord.RichEmbed()
     .setDescription("User Information")
     .setColor("#6dff77")
-    .setTitle(`${message.member.user.tag} Info`)
+    .setTitle(`${message.member.tag} Info`)
     .addField("Discord Name", message.member.username)
     .addField("Discord Tag", `#${message.member.descriminator}`)
     .addField("Joined On", message.member.createdAt)
