@@ -80,4 +80,14 @@ if(message.channel.type === "dm") console.log(`[${message.author.username}] ${me
 });
 
 
+bot.on('message' , (message) => {
+  if(!message.guild.id === "489941049427492864") return;
+  if(message.includes(":/")) {
+    message.delete();
+    message.channel.send("The word **:/** is blacklisted.")
+  }
+
+});
+
+
 bot.login(process.env.TOKEN)
