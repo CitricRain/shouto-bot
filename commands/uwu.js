@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = (bot, message, args) => {
 
-    if(message.guild.id === "489941049427492864") return;
+    if(!message.guild.id === "489941049427492864") return;
     
     let owos = ["Wats dis?", "Mistew Obama?", "OwO?", "... Why am I doing this", "UwU", "*nuzzles u*", "I don't even know what this means","Then Perish."];
 
