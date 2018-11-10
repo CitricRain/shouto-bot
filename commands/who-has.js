@@ -12,7 +12,7 @@ exports.run = (bot, message, args) => {
         })
     
         let roleEmbed = new Discord.RichEmbed()
-            .setTitle(`Users with the ${roleName} role`)
+            .setTitle(`Users with the '${roleName}' role`)
             .setDescription(membersWithRole.join("\n"),)
             .setColor("#87e7ff")
     
