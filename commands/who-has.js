@@ -6,10 +6,11 @@ exports.run = (bot, message, args) => {
         if(!roleName) return message.channel.send("What role? (Correct use: `s!who-has {role name})`")
     
         let membersWithRole = message.guild.members.filter(member => { 
-            return member.roles.find("name", roleName).toLowerCase();
+            return member.roles.find("name", roleName);
         }).map(member => {
             return member.user.username;
         })
+        if(!membersWithRole) return "No members with that role."
     
         let roleEmbed = new Discord.RichEmbed()
             .setTitle(`Users with the '${roleName}' role`)
