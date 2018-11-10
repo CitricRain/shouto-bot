@@ -10,7 +10,7 @@ exports.run = (bot, message, args) => {
         }).map(member => {
             return member.user.username;
         })
-        if(!membersWithRole) return "No members with that role."
+     
     
         let roleEmbed = new Discord.RichEmbed()
             .setTitle(`Users with the '${roleName}' role`)
