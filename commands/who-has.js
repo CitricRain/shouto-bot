@@ -3,10 +3,10 @@ const Discord = require('discord.js');
 exports.run = (bot, message, args) => {
         let roleName = message.content.split(" ").slice(1).join(" ");
 
-        if(!roleName) return message.channel.send("What role? (Correct use: `s!who-has {role name}`")
+        if(!roleName) return message.channel.send("What role? (Correct use: `s!who-has {role name})`")
     
         let membersWithRole = message.guild.members.filter(member => { 
-            return member.roles.find("name", roleName);
+            return member.roles.find("name", roleName).toLowerCase();
         }).map(member => {
             return member.user.username;
         })
