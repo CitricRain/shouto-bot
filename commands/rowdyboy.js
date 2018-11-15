@@ -6,7 +6,7 @@ exports.run = (bot, message, args) => {
 
 exports.run = (bot, message, args) => {
 
-    let randomRBoy = Math.floor(Math.random() * 6)
+    let randomRBoy = Math.floor(Math.random() * 5)
     switch (randomRBoy) {
       case 1: 
         message.channel.send(`A rowdy boy`, {files: ["./images/rowdyboy.jpg"]}).catch(console.error);
