@@ -8,7 +8,7 @@ exports.run = async (bot, message, args) => {
 
 }
 
-module.exports.help = {
+module.exports.config = {
     name: "testing",
     description: "This is a test"
 }
