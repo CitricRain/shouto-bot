@@ -10,7 +10,7 @@
         var SHEmbed = new Discord.RichEmbed()
         .setDescription("Help")
       .setColor("#70c168")
-      .addField("Test", command.config.description);
+      .addField("Test", `${command.config.description}.`);
 
       return message.channel.send(SHEmbed);
       }
