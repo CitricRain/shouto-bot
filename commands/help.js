@@ -1,5 +1,5 @@
  const Discord = require('discord.js');
-  exports.run = (bot, message, args) => { 
+  module.exports.run = (bot, message, args) => { 
 
     if(args[0] == "help") return message.channel.send("Just do `s!help` instead.")
 
