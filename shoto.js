@@ -38,6 +38,7 @@ bot.on('ready', () => {
     }, 30000)
   });
 
+  bot.commands = new Discord.Collection();
 
 bot.on("guildMemberAdd", function(member) {
   console.log(`${member.user.username} has joined the server`);
