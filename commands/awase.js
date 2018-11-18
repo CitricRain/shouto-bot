@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-module.module.exports.run = (bot, message, args) => { 
+module.exports.run = (bot, message, args) => { 
 
     let serverEmbed = new Discord.RichEmbed()
     .setImage("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/c/c4/Yosetsu_Awase_Anime_Profile.png/revision/latest/scale-to-width-down/154?cb=20181020201427")
