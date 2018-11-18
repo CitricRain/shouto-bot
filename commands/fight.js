@@ -26,7 +26,7 @@ module.exports.run = (bot, message, args) => {
           case 9:
             return 'Kyoka Jiro'
           case 10:
-            return 'Deki Kaminari'
+            return 'Denki Kaminari'
           case 11:
             return 'Eijiro Kirishima'
           case 12:

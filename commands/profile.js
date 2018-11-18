@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 module.exports.run = (bot, message, args) => {
 
     if(args[0] == "aoyama")
-    let serverEmbed = new Discord.RichEmbed()
+    var aoServerEmbed = new Discord.RichEmbed()
     .setImage("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/4/49/Yuga_Aoyama_full_body_hero_costume.png/revision/latest?cb=20161230185522")
     .setDescription("Yuga Aoyama")
     .setColor("#ebc4ff")
@@ -19,10 +19,10 @@ module.exports.run = (bot, message, args) => {
     .addField("Seat No.", `1`)
     .addField("Likes", `Himself`);
     
-    message.channel.send(serverEmbed);
+    message.channel.send(aoServerEmbed);
 
     if(args[0] == "ashido")
-    let serverEmbed = new Discord.RichEmbed()
+   var asServerEmbed = new Discord.RichEmbed()
     .setImage("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/3/30/Mina_Ashido_Full_Body_Costume.png/revision/latest?cb=20161230190231")     
     .setDescription("Mina Ashido")
     .setColor("#ff60fc")
@@ -38,10 +38,10 @@ module.exports.run = (bot, message, args) => {
     .addField("Seat No.", `2`)
     .addField("Likes", `Natto, Okra, Dancing`);
 
-    message.channel.send(serverEmbed);
+    message.channel.send(asServerEmbed);
 
     if(args[0] == "asui")
-    let serverEmbed = new Discord.RichEmbed()
+    var asuServerEmbed = new Discord.RichEmbed()
     .setImage("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/8/88/Tsuyu_Asui_Full_Body_Hero_Costume_Anime.png/revision/latest/scale-to-width-down/224?cb=20160118114942")     
     .setDescription("Tsuyu Asui")
     .setColor("#a5ff91")
@@ -57,10 +57,10 @@ module.exports.run = (bot, message, args) => {
     .addField("Seat No.", `3`)
     .addField("Likes", `Jelly/Jello`);
 
-    message.channel.send(serverEmbed);
+    message.channel.send(asuServerEmbed);
 
     if(args[0] == "awase")
-    let serverEmbed = new Discord.RichEmbed()
+   var awServerEmbed = new Discord.RichEmbed()
     .setImage("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/c/c4/Yosetsu_Awase_Anime_Profile.png/revision/latest/scale-to-width-down/154?cb=20181020201427")
     .setDescription("Yosetsu Awase")
     .setColor("#639fff")
@@ -75,10 +75,10 @@ module.exports.run = (bot, message, args) => {
     .addField("Occupation", `1st Year Student of UA High School`)
     .addField("Likes", `Mobile games`)
 
-    message.channel.send(serverEmbed);
+    message.channel.send(awServerEmbed);
 
     if(args[0] == "bakugo")  
-    let serverEmbed = new Discord.RichEmbed()
+    var baServerEmbed = new Discord.RichEmbed()
     .setImage("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/e/e8/Katsuki_Bakugo_Hero_Costume_Full_Body.png/revision/latest/scale-to-width-down/249?cb=20170718224312")  
     .setDescription("Katsuki Bakugo")
     .setColor("#fc7425")
@@ -94,7 +94,7 @@ module.exports.run = (bot, message, args) => {
     .addField("Seat No.", `17`)
     .addField("Likes", `Spicy food, Mountain Climbing`);
 
-    message.channel.send(serverEmbed);
+    message.channel.send(baServerEmbed);
 
 };
 module.exports.help = {
