@@ -1,11 +1,10 @@
 const Discord = require('discord.js');
-const images = require('images.json')
 
 module.exports.run = (bot, message, args) => {
 
     if(args[0] == "bakugo")  
     let serverEmbed = new Discord.RichEmbed()
-    .setImage(images.bakguo)     
+    .setImage("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/e/e8/Katsuki_Bakugo_Hero_Costume_Full_Body.png/revision/latest/scale-to-width-down/249?cb=20170718224312")  
     .setDescription("Katsuki Bakugo")
     .setColor("#fc7425")
     .addField("Japanese Name", `爆豪勝己`)
