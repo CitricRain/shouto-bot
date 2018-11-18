@@ -29,7 +29,9 @@ module.exports.run = (bot, message, args) => {
     message.channel.send(`${bUser} was banned for ${bReason}, send them to Tartarus!`)
   
     return;
+
   } 
+
 
   module.exports.config = {
     name: "ban",
