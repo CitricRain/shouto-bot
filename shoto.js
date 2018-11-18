@@ -23,6 +23,8 @@ fs.readdir("./commands/", (err, files) => {
     if(!file.endsWith(".js")) return;
     let eventFunction = require(`./commands/${file}`);
 
+let pull = require(`/.commands/${file}`)
+
     bot.commands.set(pull.config.name, pull);
     
 
