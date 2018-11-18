@@ -88,7 +88,7 @@ module.exports.run = (bot, message, args) => {
     .addField("Likes", `Spicy food, Mountain Climbing`);
 
     if(args[0] == "dabi") 
-    let daServerEmbed = new Discord.RichEmbed()
+   var daServerEmbed = new Discord.RichEmbed()
     .setImage("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/b/b0/Dabi_anime_profile.png/revision/latest/scale-to-width-down/176?cb=20170923130039")     
     .setDescription("Dabi")
     .setColor("#1959c1")
@@ -103,7 +103,7 @@ module.exports.run = (bot, message, args) => {
     .addField("Occupation", `Leader of the Vanguard Action Squad`)
     .addField("Likes", `Unknown`);
 
-    let daSecretServerEmbed = new Discord.RichEmbed()
+    var daSecretServerEmbed = new Discord.RichEmbed()
     .setImage("https://66.media.tumblr.com/747a733f1dc648f6c5f9331d8d7003ff/tumblr_p7lk7yEiw61u9espno1_500.png")     
     .setDescription("Touya")
     .setColor("#ff0000")
