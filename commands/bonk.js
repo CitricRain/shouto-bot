@@ -12,5 +12,4 @@ module.exports.config = {
     type: "Image",
     usage: "s!bonk",
     extra: "None"
-
   }
