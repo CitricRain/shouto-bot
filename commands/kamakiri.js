@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 module.exports.run = (bot, message, args) => { 
 
     let serverEmbed = new Discord.RichEmbed()
-    .setImage("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/1/1e/Sen_Kaibara_Anime_Profile.png/revision/latest/scale-to-width-down/154?cb=20181020230751")
+    .setImage("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/b/ba/Togaru_Kamakiri_Anime_Profile.png/revision/latest/scale-to-width-down/150?cb=20181020231015")
     .setDescription("Togaru Kamakiri")
     .setColor("#c4f7a0")
     .addField("Japanese Name", `鎌切尖`)
