@@ -31,6 +31,13 @@ module.exports.run = (bot, message, args) => {
     return;
   } 
 
-  module.exports.help = {
-    name: "ban"
+  module.exports.config = {
+    name: "ban",
+    aliases: [],
+    description: "Bans a given member",
+    permissions: "BAN MEMBERS",
+    type: "Moderation",
+    usage: "s!ban <@member>",
+    extra: "If there is a channel called `bans-log` in your server Shoto will log each ban done through the command to the ban log."
+
   }

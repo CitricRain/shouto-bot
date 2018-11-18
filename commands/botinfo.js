@@ -12,6 +12,12 @@ module.exports.run = (bot, message, args) => {
 
     return message.channel.send(botEmbed);
   }
-   module.exports.help = {
-    name: "botinfo"
-}
+  module.exports.config = {
+    name: "botinfo",
+    aliases: ["binfo", "bi"],
+    description: "Sends the bot information",
+    permissions: "None",
+    type: "Info",
+    usage: "s!botinfo || s!binfo || s!bi",
+    extra: "None"
+  }

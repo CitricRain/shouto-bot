@@ -24,9 +24,7 @@ fs.readdir("./commands/", (err, files) => {
     let eventFunction = require(`./commands/${file}`);
 
     bot.commands.set(pull.config.name, pull);
-    pull.config.aliases.forEach(alias => {
-      bot.aliases.set(alias, pull.config.name)
-    });
+    
 
     let commandName = file.split(".")[0];
     bot.on(commandName, (...args) => eventFunction.run(bot, ...args));
