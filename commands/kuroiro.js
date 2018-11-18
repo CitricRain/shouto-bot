@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = (bot, message, args) => { 
+module.exports.run = (bot, message, args) => { 
 
     let serverEmbed = new Discord.RichEmbed()
     .setImage("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/5/51/Shihai_Kuroiro_Anime_Profile.png/revision/latest/scale-to-width-down/143?cb=20181020225723")

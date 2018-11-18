@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = (bot, message, args) => { 
+module.exports.run = (bot, message, args) => { 
 
     let serverEmbed = new Discord.RichEmbed()
     .setImage("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/8/84/Mashirao_Ojiro_2nd_Hero_Costume.png/revision/latest?cb=20180728025539")

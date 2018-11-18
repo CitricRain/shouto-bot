@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = (bot, message, args) => { 
+module.exports.run = (bot, message, args) => { 
 
     let serverEmbed = new Discord.RichEmbed()
     .setImage("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/4/47/Rikido_Sato_Full_Body_Hero_Costume.png/revision/latest/scale-to-width-down/262?cb=20161230192011")

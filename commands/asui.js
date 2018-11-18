@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = (bot, message, args) => { 
+module.exports.run = (bot, message, args) => { 
 
     let serverEmbed = new Discord.RichEmbed()
     .setImage("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/8/88/Tsuyu_Asui_Full_Body_Hero_Costume_Anime.png/revision/latest/scale-to-width-down/224?cb=20160118114942")     

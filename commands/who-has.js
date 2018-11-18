@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = (bot, message, args) => {
+module.exports.run = (bot, message, args) => {
         let roleName = message.content.split(" ").slice(1).join(" ");
 
         if(!roleName) return message.channel.send("What role? (Correct use: `s!who-has {role name})`")

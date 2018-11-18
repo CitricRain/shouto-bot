@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = (bot, message, args) => { 
+module.exports.run = (bot, message, args) => { 
   let guild = message.guild
     if(message.channel.type === "dm") return message.channel.send("But... There's no one else here.");
     if(!guild.me.hasPermission("BAN_MEMBERS")) return message.channel.send("I have not recieved my Provisional Banning License yet. I'll receieve it once I'm given the permission `Ban Members`");

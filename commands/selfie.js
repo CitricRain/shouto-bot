@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = (bot, message, args) => {
+module.exports.run = (bot, message, args) => {
     
     let randomPicture = Math.floor(Math.random() * 36)
     let person = message.author

@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = (bot, message, args) => { 
+module.exports.run = (bot, message, args) => { 
 
     if(message.channel.type === "dm") return message.channel.send("We are not currently in a server.");
 

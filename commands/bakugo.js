@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = (bot, message, args) => { 
+module.exports.run = (bot, message, args) => { 
 
     let serverEmbed = new Discord.RichEmbed()
     .setImage("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/e/e8/Katsuki_Bakugo_Hero_Costume_Full_Body.png/revision/latest/scale-to-width-down/249?cb=20170718224312")     

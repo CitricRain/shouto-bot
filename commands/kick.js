@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = (bot, message, args) => { 
+module.exports.run = (bot, message, args) => { 
     let guild = message.guild
     if(message.channel.type === "dm") return message.channel.send("But... There's no one else here.");
     if(!guild.me.hasPermission("KICK_MEMBERS")) return message.channel.send("I have not recieved my Provisional Kicking License yet. I'll receieve it once I'm given the permission `Kick Members`");

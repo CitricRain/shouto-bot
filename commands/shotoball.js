@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = (bot, message, args) => {
+module.exports.run = (bot, message, args) => {
 
   let replies = ["Yes", "No", "I don't know", "Of course", "Perhaps", "Definitely not", "Definitely", "Maybe", "Of course not", "Possibly"];
 

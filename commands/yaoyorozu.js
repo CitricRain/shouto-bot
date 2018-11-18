@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = (bot, message, args) => { 
+module.exports.run = (bot, message, args) => { 
 
     let serverEmbed = new Discord.RichEmbed()
     .setImage("https://vignette.wikia.nocookie.net/bokunoheroacademia/images/f/f2/Momo_Yayorozu_Full_Body_Hero_Costume.png/revision/latest/scale-to-width-down/160?cb=20161230175644")

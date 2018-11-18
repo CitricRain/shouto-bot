@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = (bot, message, args) => { 
+module.exports.run = (bot, message, args) => { 
    
     let fireEmbed = new Discord.RichEmbed()
     .setTitle("Results")

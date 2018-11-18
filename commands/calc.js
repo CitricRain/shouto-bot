@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const math = require('mathjs');
 
-exports.run = async (bot, message, args) => { 
+module.exports.run = async (bot, message, args) => { 
 
     if(!args[0]) return message.channel.send("If I'm going to help you, you at least need to tell me what I'm helping you with.");
     

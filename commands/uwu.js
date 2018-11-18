@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = (bot, message, args) => {
+module.exports.run = (bot, message, args) => {
 
     if(!message.guild.id === "489941049427492864") return;
     
