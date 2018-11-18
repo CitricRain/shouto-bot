@@ -161,7 +161,7 @@ module.exports.run = (bot, message, args) => {
 
     }
 
-    return message.channel.send(serverEmbed);
+    return message.channel.send(serverEmbed).catch(console.error)
 
 };
 module.exports.help = {
