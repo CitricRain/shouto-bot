@@ -14,13 +14,20 @@ const fs = require('fs');
 const Discord = require('discord.js');
 const config = require("./config.json");
 const bot = new Discord.Client();
-
+bot.commands = new Discord.Collection();
+bot.aliases = new Discord.Collection();
 
 fs.readdir("./commands/", (err, files) => {
   if (err) return console.error(err);
   files.forEach(file => {
     if(!file.endsWith(".js")) return;
     let eventFunction = require(`./commands/${file}`);
+
+    bot.commands.set(pull.config.name, pull);
+    pull.config.aliases.forEach(alias => {
+      bot.aliases.set(alias, pull.config.name)
+    });
+
     let commandName = file.split(".")[0];
     bot.on(commandName, (...args) => eventFunction.run(bot, ...args));
   });
