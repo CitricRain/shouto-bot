@@ -11,11 +11,11 @@
     Math.floor(Math.random() * 3)
     switch (randomNumber) {
       case 0:
-        return 'rock';
+        return 'rock :full_moon:';
       case 1:
-        return 'paper';
+        return 'paper :newspaper:';
       case 2:
-        return 'scissors';
+        return 'scissors :scissors:';
     }
   };
   
@@ -42,14 +42,14 @@
     } else if (userChoice == 'paper' && computerChoice === 'rock') {
         return "You won!"
     } else {
-        return "Wait... That's not how this works. You have to use either `rock`, `paper` or `scissors`."
+        return ":exlimation: Wait... That's not how this works. You have to use either `rock`, `paper` or `scissors`."
     }
 }
    
     const userEmoji = getUserEmoji();
     const computerChoice = getComputerChoice();
    message.channel.send(`You chose ${userChoice} ${userEmoji}`);
-message.channel.send(`I chose ${computerChoice}`);
+message.channel.send(`I chose \`${computerChoice}\``);
    message.channel.send(determineWinner(userChoice, computerChoice));
   
   };
