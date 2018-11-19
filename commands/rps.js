@@ -2,9 +2,8 @@
    const Discord = require('discord.js');
 
    module.exports.run = (bot, message, args) => {
-
-   let userChoice = args.slice(' ')
     
+    let userChoice = args[0];
     if(!args[0]) return message.channel.send("Please select rock, paper or scissors.")
 
   function getComputerChoice() {
@@ -21,11 +20,11 @@
   };
   
   const determineWinner = (userChoice, computerChoice) => {
-    if (userChoice === 'rock' && computerChoice === 'rock') {
+    if (userChoice == 'rock' && computerChoice === 'rock') {
       return 'It`s a tie!';
-    } else if (userChoice === 'rock' && computerChoice === 'paper') {
+    } else if (userChoice == 'rock' && computerChoice === 'paper') {
         return 'I won!'
-      } else if (userChoice === 'rock' && computerChoice === 'scissors') {
+      } else if (userChoice == 'rock' && computerChoice === 'scissors') {
           return "You won!"
     } else {
         return 'Please play fairly (Use rock, paper or scissors.'
