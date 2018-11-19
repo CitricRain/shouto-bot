@@ -4,8 +4,10 @@
    module.exports.run = (bot, message, args) => {
 
    let userChoice = args.slice(' ')
-    if (!userChoice === 'rock' || userChoice === 'paper' || userChoice === 'scissors') return message.channel.send("Please play fairly. (Use either rock, paper or scissors.)")
-      
+    if (!args[0] === 'rock' || !args[0] === 'paper' || !args[0] === 'scissors') return message.channel.send("Please play fairly. (Use either rock, paper or scissors.)")
+    
+    if(!args[0]) return message.channel.send("Please select rock, paper or scissors.")
+
   function getComputerChoice() {
     let randomNumber =
     Math.floor(Math.random() * 3)
