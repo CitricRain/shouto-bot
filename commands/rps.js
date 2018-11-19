@@ -4,7 +4,6 @@
    module.exports.run = (bot, message, args) => {
 
    let userChoice = args.slice(' ')
-    if (!args[0] === 'rock' || !args[0] === 'paper' || !args[0] === 'scissors') return message.channel.send("Please play fairly. (Use either rock, paper or scissors.)")
     
     if(!args[0]) return message.channel.send("Please select rock, paper or scissors.")
 
@@ -22,30 +21,14 @@
   };
   
   const determineWinner = (userChoice, computerChoice) => {
-    if (userChoice === computerChoice) {
+    if (userChoice === 'rock' && computerChoice === 'rock') {
       return 'It`s a tie!';
-    }
-    if (userChoice === 'rock') {
-      if(computerChoice === 'paper') {
-        return 'You won!'
-      }
-    }
-    if (userChoice === 'paper') {
-      if (computerChoice === 'scissors') {
-        return 'The computer won!';
-      } else {
-        return 'You won!'
-      }
-    }
-    if (userChoice === 'scissors') {
-      if (computerChoice === 'rock') {
-        return 'The computer won!';
-      } else {
-        return 'You won!'
-      }
-    }
-  }
-  
+    } else if (userChoice === 'rock' && computerChoice === 'paper') {
+        return 'I won!'
+      } else if (userChoice === 'rock' && computerChoice === 'scissors') {
+          return "You won!"
+    } 
+}
 
     const computerChoice =
           getComputerChoice();
@@ -54,4 +37,4 @@ message.channel.send(`I chose ${computerChoice}`);
    message.channel.send(determineWinner(userChoice, computerChoice));
   
   };
-  
+ 
