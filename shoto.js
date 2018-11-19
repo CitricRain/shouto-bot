@@ -18,7 +18,7 @@ bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
 
 fs.readdir("./commands/", (err, files) => {
-  if (err) return console.log(`Command ${err} not found!`);
+  if (err) return console.error(err);
   files.forEach(file => {
     if(!file.endsWith(".js")) return;
     let eventFunction = require(`./commands/${file}`);
