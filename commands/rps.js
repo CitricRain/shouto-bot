@@ -5,7 +5,8 @@
     
     let userChoice = args[0];
     if(!args[0]) return message.channel.send("Please select rock, paper or scissors.")
-
+    if(!userChoice == 'rock' || !userChoice == 'paper' || !userChoice == 'scissors') message.channel.send(":exclamation: | Please play fairly (Use either `rock`, `paper` or `scissors`.")
+ 
   function getComputerChoice() {
     let randomNumber =
     Math.floor(Math.random() * 3)
@@ -26,10 +27,9 @@
         return 'I won!'
       } else if (userChoice == 'rock' && computerChoice === 'scissors') {
           return "You won!"
-    } else {
-        return 'Please play fairly (Use rock, paper or scissors.'
+    } 
 }
-  }
+   
 
     const computerChoice =
           getComputerChoice();
