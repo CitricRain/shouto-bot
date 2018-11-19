@@ -5,7 +5,7 @@
     
     let userChoice = args[0];
     if(!args[0]) return message.channel.send("Please select rock, paper or scissors.")
-    if(!userChoice == 'rock' || !userChoice == 'paper' || !userChoice == 'scissors') message.channel.send(":exclamation: | Please play fairly (Use either `rock`, `paper` or `scissors`.")
+    if(!userChoice == 'rock' || 'paper' || 'scissors') message.channel.send(":exclamation: | Please play fairly (Use either `rock`, `paper` or `scissors`.")
  
   function getComputerChoice() {
     let randomNumber =
