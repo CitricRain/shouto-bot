@@ -11,11 +11,11 @@
     Math.floor(Math.random() * 3)
     switch (randomNumber) {
       case 0:
-        return 'rock :full_moon:';
+        return '`rock` :full_moon:';
       case 1:
-        return 'paper :newspaper:';
+        return '`paper` :newspaper:';
       case 2:
-        return 'scissors :scissors:';
+        return '`scissors` :scissors:';
     }
   };
   
@@ -33,23 +33,33 @@
 
 
   const determineWinner = (userChoice, computerChoice) => {
-    if (userChoice == 'rock' && computerChoice === 'rock') {
-      return 'It`s a tie!';
-    } else if (userChoice == 'rock' && computerChoice === 'paper') {
-        return 'I won!'
-      } else if (userChoice == 'rock' && computerChoice === 'scissors') {
-          return "You won!"
-    } else if (userChoice == 'paper' && computerChoice === 'rock') {
-        return "You won!"
+    if (userChoice == 'rock' && computerChoice === '`rock` :full_moon:') {
+        return 'It`s a tie! :loop:';
+    } else if (userChoice == 'rock' && computerChoice === '`paper` :newspaper:') {
+        return 'I won! :trophy:'
+    } else if (userChoice == 'rock' && computerChoice === '`scissors` :scissors:') {
+        return "You won! :trophy:"
+    } else if (userChoice == 'paper' && computerChoice === '`rock` :full_moon:') {
+        return "You won! :trophy:"
+    } else if (userChoice == 'paper' && computerChoice === '`paper` :newspaper:') {
+        return "It's a tie! :loop:"
+    } else if (userChoice == 'paper' && computerChoice === '`scissors` :scissors:') {
+        return "I won! :trophy:"
+    } else if (userChoice == 'scissors' && computerChoice === '`rock` :full_moon:') {
+        return "I won! :trophy:"
+    } else if (userChoice == 'scissors' && computerChoice === '`paper` :newspaper:') {
+        return 'You won! :trophy:'
+    } else if (userChoice == 'scissors' && computerChoice === '`scissors` :scissors:') {
+        return "It's a tie! :loop:"
     } else {
-        return ":exlimation: Wait... That's not how this works. You have to use either `rock`, `paper` or `scissors`."
+        return "Wait... That's not how this works. You have to use either `rock`, `paper` or `scissors`. :exclamation:"
     }
 }
    
     const userEmoji = getUserEmoji();
     const computerChoice = getComputerChoice();
-   message.channel.send(`You chose ${userChoice} ${userEmoji}`);
-message.channel.send(`I chose \`${computerChoice}\``);
+   message.channel.send(`You chose \`${userChoice}\` ${userEmoji}`);
+   message.channel.send(`I chose ${computerChoice}`);
    message.channel.send(determineWinner(userChoice, computerChoice));
   
   };
