@@ -3,8 +3,8 @@
 
    module.exports.run = (bot, message, args) => {
 
-   let userInput = args.slice(' ')
-    if (!userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') return message.channel.send("Please play fairly. (Use either rock, paper or scissors.)")
+   let userChoice = args.slice(' ')
+    if (!userChoice === 'rock' || userChoice === 'paper' || userChoice === 'scissors') return message.channel.send("Please play fairly. (Use either rock, paper or scissors.)")
       
   function getComputerChoice() {
     let randomNumber =
@@ -44,13 +44,12 @@
     }
   }
   
-  const playGame = () => {
 
     const computerChoice =
           getComputerChoice();
-    console.log(`You chose ${userChoice}`);
-    console.log(`The computer chose ${computerChoice}`);
-    console.log(determineWinner(userChoice, computerChoice));
-  }
+   message.channel.send(`You chose ${userChoice}`);
+message.channel.send(`The computer chose ${computerChoice}`);
+   message.channel.send(determineWinner(userChoice, computerChoice));
+  
   };
   
