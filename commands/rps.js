@@ -5,7 +5,6 @@
     
     let userChoice = args[0];
     if(!args[0]) return message.channel.send("Please select rock, paper or scissors.")
-    if(!userChoice == 'rock' || 'paper' || 'scissors') message.channel.send(":exclamation: | Please play fairly (Use either `rock`, `paper` or `scissors`.")
  
   function getComputerChoice() {
     let randomNumber =
@@ -20,6 +19,19 @@
     }
   };
   
+  function getUserEmoji() {
+      if (userChoice == 'rock') {
+          return ":full_moon:"
+      } else if (userChoice == 'paper') {
+           return ":newspaper:"
+      } else if (userChoice == 'scissors') {
+           return ":scissors:"
+  } else {
+    return ":no_entry_sign:"
+  }
+};
+
+
   const determineWinner = (userChoice, computerChoice) => {
     if (userChoice == 'rock' && computerChoice === 'rock') {
       return 'It`s a tie!';
@@ -27,13 +39,16 @@
         return 'I won!'
       } else if (userChoice == 'rock' && computerChoice === 'scissors') {
           return "You won!"
-    } 
+    } else if (userChoice == 'paper' && computerChoice === 'rock') {
+        return "You won!"
+    } else {
+        return "Wait... That's not how this works. You have to use either `rock`, `paper` or `scissors`."
+    }
 }
    
-
-    const computerChoice =
-          getComputerChoice();
-   message.channel.send(`You chose ${userChoice}`);
+    const userEmoji = getUserEmoji();
+    const computerChoice = getComputerChoice();
+   message.channel.send(`You chose ${userChoice} ${userEmoji}`);
 message.channel.send(`I chose ${computerChoice}`);
    message.channel.send(determineWinner(userChoice, computerChoice));
   
