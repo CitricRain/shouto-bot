@@ -30,6 +30,7 @@
     } else {
         return 'Please play fairly (Use rock, paper or scissors.'
 }
+  }
 
     const computerChoice =
           getComputerChoice();
