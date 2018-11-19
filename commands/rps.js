@@ -27,7 +27,8 @@
         return 'I won!'
       } else if (userChoice === 'rock' && computerChoice === 'scissors') {
           return "You won!"
-    } 
+    } else {
+        return 'Please play fairly (Use rock, paper or scissors.'
 }
 
     const computerChoice =
