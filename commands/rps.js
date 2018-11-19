@@ -50,7 +50,7 @@
     const computerChoice =
           getComputerChoice();
    message.channel.send(`You chose ${userChoice}`);
-message.channel.send(`The computer chose ${computerChoice}`);
+message.channel.send(`I chose ${computerChoice}`);
    message.channel.send(determineWinner(userChoice, computerChoice));
   
   };
