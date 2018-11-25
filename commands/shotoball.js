@@ -6,7 +6,7 @@ module.exports.run = (bot, message, args) => {
 
   let result = Math.floor((Math.random() * replies.length));
   let question = args.slice(0).join(" ");
-  if(!question) return message.channel.send("Please ask a question. (eg. `s!shotoball <question>`");
+  if(!question) return message.channel.send("Please ask a question. (eg. `s!shotoball <question>`)");
   
   let sBallEmbed = new Discord.RichEmbed()
   .setAuthor(message.author.tag)
