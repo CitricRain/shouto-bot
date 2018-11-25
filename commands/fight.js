@@ -18,7 +18,7 @@ module.exports.run = (bot, message, args) => {
           case 5:
             return 'Mina Ashido'
           case 6:
-            return 'Tsuyu Asuu'
+            return 'Tsuyu Asui'
           case 7:
             return 'Toru Hagakure'
           case 8:
