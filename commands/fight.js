@@ -85,7 +85,30 @@ module.exports.run = (bot, message, args) => {
       return 'Stain';
     }
 }
-function getFight() {
+function getHFight() {
+  let fRandomNumber =
+  Math.floor(Math.random() * 9)
+  switch (fRandomNumber) {
+    case 0:
+      return 'throws a punch at';
+    case 1:
+      return 'kicks';
+    case 2:
+      return "uppercuts";
+    case 3:
+      return 'uses their quirk against';
+    case 4:
+      return 'dodges';
+    case 5:
+      return 'trips up';
+    case 6:
+      return 'slaps';
+    case 7:
+      return 'smacks';
+    case 8:
+    return 'grabs something nearby to use against';
+  }
+}function getVFight() {
   let fRandomNumber =
   Math.floor(Math.random() * 9)
   switch (fRandomNumber) {
@@ -122,7 +145,8 @@ function getFight() {
    }
     const villain = getVillain(``);
     const hero = getHero(``);
-    const fight = getFight(``);
+    const fight = getHFight(``);
+    const vfight = getVFight(``)
     //message.channel.send(`${hero} encounters ${villain}`);
     //message.channel.send(`${hero} and ${villain} prepare to fight!`);
     //message.channel.send(getWinner());
@@ -131,10 +155,13 @@ function getFight() {
     (message.channel.send(`${hero} ${fight} ${villain}!`))
     .then((msg)=>{
       setTimeout(function(){
-      msg.edit(`${villain} ${fight} ${hero}!`);
-      }, 5000)});
+      msg.edit(`${villain} ${vfight} ${hero}!`);
+      }, 5000)};)
+      .then((msg)=>{
+        setTimeout(function(){
+          msg.channel.send(getWinner());
+        }, 10000)});
 
-      message.channel.send(getWinner());
     return;
   };
      //message.channel.send('this works...')
