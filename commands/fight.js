@@ -156,7 +156,7 @@ function getHFight() {
     .then((msg)=>{
       setTimeout(function(){
       msg.edit(`${villain} ${vfight} ${hero}!`);
-      }, 5000)};)
+      }, 5000);})
       .then((msg)=>{
         setTimeout(function(){
           msg.channel.send(getWinner());
