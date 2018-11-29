@@ -133,6 +133,7 @@ function getFight() {
       setTimeout(function(){
       msg.edit(`${villain} ${fight} ${hero}!`);
       }, 5000)})
+      
       message.channel.send(getWinner());
     return;
   };
