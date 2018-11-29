@@ -127,14 +127,13 @@ function getFight() {
     //message.channel.send(`${hero} and ${villain} prepare to fight!`);
     //message.channel.send(getWinner());
     message.channel.send(`${hero} encounters ${villain}`)
-    .then(message.channel.send(`${hero} ${fight} ${villain}!`))
+
+    (message.channel.send(`${hero} ${fight} ${villain}!`))
     .then((msg)=>{
       setTimeout(function(){
       msg.edit(`${villain} ${fight} ${hero}!`);
-      }, 5000)}).then((msg)=>{
-        setTimeout(function(){
-        msg.send(getWinner());
-        }, 5000)});
+      }, 5000)})
+      message.channel.send(getWinner());
     return;
   };
      //message.channel.send('this works...')
