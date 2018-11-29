@@ -122,7 +122,7 @@ function getFight() {
    }
     const villain = getVillain(``);
     const hero = getHero(``);
-    const fight = getfight(``);
+    const fight = getFight(``);
     //message.channel.send(`${hero} encounters ${villain}`);
     //message.channel.send(`${hero} and ${villain} prepare to fight!`);
     //message.channel.send(getWinner());
