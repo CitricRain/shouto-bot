@@ -37,7 +37,7 @@ module.exports.run = (bot, message, args) => {
         message.channel.send(serverEmbed);
         break;
         case 3: 
-        message.channel.send(serverEmbed);
+        message.channel.send(secretServerEmbed);
         break;
         case 3: 
         message.channel.send(serverEmbed);

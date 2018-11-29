@@ -3,8 +3,8 @@ const Discord = require('discord.js');
 
 module.exports.run = async (bot, message, args) => { 
    
-    if (args[0] == "this") return message.channel.send("This works.")
-    if (args[0] == "it") return message.channel.send("It works.")
+    message.channel.send("This is working...").then(msg => msg.edit(5000("This is also working!")))
+return;
 
 }
 
