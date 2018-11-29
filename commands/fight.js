@@ -151,15 +151,16 @@ function getHFight() {
     //message.channel.send(`${hero} and ${villain} prepare to fight!`);
     //message.channel.send(getWinner());
     message.channel.send(`${hero} encounters ${villain}`);
-
+    message.channel.send(`${hero} and ${villain} prepare to fight!`);
     (message.channel.send(`${hero} ${fight} ${villain}!`))
     .then((msg)=>{
       setTimeout(function(){
       msg.edit(`${villain} ${vfight} ${hero}!`);
-      }, 3000);})
-      .then(args => {
-         message.channel.send(getWinner())
-      }, 6000);
+      }, 3000);}).then((msg)=>{
+        setTimeout(function(){
+        msg.edit(getHero());
+        }, 3000);})
+  
 
     return;
   };
