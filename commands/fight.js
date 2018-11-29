@@ -126,7 +126,7 @@ function getFight() {
     //message.channel.send(`${hero} encounters ${villain}`);
     //message.channel.send(`${hero} and ${villain} prepare to fight!`);
     //message.channel.send(getWinner());
-    message.channel.send(`${hero} encounters ${villain}`)
+    message.channel.send(`${hero} encounters ${villain}`);
 
     (message.channel.send(`${hero} ${fight} ${villain}!`))
     .then((msg)=>{
