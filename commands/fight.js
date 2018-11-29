@@ -152,10 +152,10 @@ function getHFight() {
     //message.channel.send(getWinner());
     message.channel.send(`${hero} encounters ${villain}`);
     message.channel.send(`${hero} and ${villain} prepare to fight!`);
-    (message.channel.send(`:exclamation: ${hero} ${fight} ${villain}!`))
+    (message.channel.send(`:exclamation: ${hero} ${fight} ${villain}...!`))
     .then((msg)=>{
       setTimeout(function(){
-      msg.edit(`:exclamation: ${villain} ${vfight} ${hero}!`)
+      msg.edit(`:exclamation: ${villain} ${vfight} ${hero}...!`)
       .then((msg)=>{
         setTimeout(function(){
         msg.edit(getWinner());
