@@ -156,11 +156,7 @@ function getHFight() {
     .then((msg)=>{
       setTimeout(function(){
       msg.edit(`${villain} ${vfight} ${hero}!`);
-      }, 3000)}).then((msg)=>{
-        setTimeout(function(){
-        msg.edit(getWinner());
-        }, 3000)});
-  
+      }, 3000)});
 
     return;
   };
