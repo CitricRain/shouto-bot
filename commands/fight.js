@@ -129,10 +129,10 @@ function getFight() {
     message.channel.send(`${hero} encounters ${villain}`)
     .then((msg)=>{
     setTimeout(function(){
-    msg.channel.send(`${hero} ${fight} ${villain}`);
+    msg.channel.send(`${hero} ${fight} ${villain}!`);
     }, 1000)}).then((msg)=>{
       setTimeout(function(){
-      msg.edit(`${villain} ${fight} ${hero}`);
+      msg.edit(`${villain} ${fight} ${hero}!`);
       }, 5000)}).then((msg)=>{
         setTimeout(function(){
         msg.channel.send(getWinner());
