@@ -127,8 +127,7 @@ function getFight() {
     //message.channel.send(`${hero} and ${villain} prepare to fight!`);
     //message.channel.send(getWinner());
     message.channel.send(`${hero} encounters ${villain}`)
-  
-    msg.channel.send(`${hero} ${fight} ${villain}!`)
+    .then(msg.channel.send(`${hero} ${fight} ${villain}!`))
     .then((msg)=>{
       setTimeout(function(){
       msg.edit(`${villain} ${fight} ${hero}!`);
