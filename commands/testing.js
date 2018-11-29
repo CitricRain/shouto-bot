@@ -2,9 +2,12 @@
 const Discord = require('discord.js');
 
 module.exports.run = async (bot, message, args) => { 
-   
-    message.channel.send("This is working...").then(msg => msg.edit("This is also working!"))
-return;
+
+    message.channel.send('this works...')
+    .then((msg)=>{
+    setTimeout(function(){
+    msg.edit('this also works!');
+    }, 1000)});
 
 }
 
