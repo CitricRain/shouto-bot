@@ -3,12 +3,17 @@ const Discord = require('discord.js');
 
 module.exports.run = async (bot, message, args) => { 
 
+    //message.channel.send('this works...')
+   // .then((msg)=>{
+    //setTimeout(function(){
+    //msg.edit('this also works!');
+    //}, 1000)});
+
     message.channel.send('this works...')
     .then((msg)=>{
     setTimeout(function(){
-    msg.edit('this also works!');
+    msg.channel.send('this also works!');
     }, 1000)});
-
 }
 
 module.exports.config = {
