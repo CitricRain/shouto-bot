@@ -127,10 +127,9 @@ function getFight() {
     //message.channel.send(`${hero} and ${villain} prepare to fight!`);
     //message.channel.send(getWinner());
     message.channel.send(`${hero} encounters ${villain}`)
+  
+    msg.channel.send(`${hero} ${fight} ${villain}!`)
     .then((msg)=>{
-    setTimeout(function(){
-    msg.channel.send(`${hero} ${fight} ${villain}!`);
-    }, 1000)}).then((msg)=>{
       setTimeout(function(){
       msg.edit(`${villain} ${fight} ${hero}!`);
       }, 5000)}).then((msg)=>{
@@ -139,6 +138,11 @@ function getFight() {
         }, 5000)});
     return;
   };
+     //message.channel.send('this works...')
+   // .then((msg)=>{
+    //setTimeout(function(){
+    //msg.edit('this also works!');
+    //}, 1000)});
 
 module.exports.help = {
     name: "fight"
