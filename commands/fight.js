@@ -109,9 +109,9 @@ function getHFight() {
     return 'grabs something nearby to use against';
   }
 }function getVFight() {
-  let fRandomNumber =
+  let fvRandomNumber =
   Math.floor(Math.random() * 9)
-  switch (fRandomNumber) {
+  switch (fvRandomNumber) {
     case 0:
       return 'throws a punch at';
     case 1:
